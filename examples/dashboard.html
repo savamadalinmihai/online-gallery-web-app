@@ -24,40 +24,41 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
             <div class="logo">
-                <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                <a class="simple-text logo-mini">
+
                 </a>
-                <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                <a class="simple-text logo-normal">
                     Online Gallery
                 </a>
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="active">
-                        <a href="../examples/dashboard.html">
+                        <a href="../examples/photos.html">
                             <i class="now-ui-icons media-1_camera-compact"></i>
                             <p>Photos</p>
                         </a>
                     </li>
                     <li>
-                        <a href="../examples/icons.html">
+                        <a href="../folders.html">
                             <i class="now-ui-icons files_single-copy-04"></i>
                             <p>Folders</p>
                         </a>
                     </li>
                     <li>
-                        <a href="../examples/map.html">
+                        <a href="../albums.html">
                             <i class="now-ui-icons media-1_album"></i>
                             <p>Albums</p>
                         </a>
                     </li>
                     <li>
-                        <a href="../notifications.html">
+                        <a href="../trash.html">
                             <i class="now-ui-icons shopping_basket"></i>
                             <p>Trash</p>
                         </a>
                     </li>
                     <li>
-                        <a href="../notifications.html">
+                        <a href="../tags.html">
                             <i class="now-ui-icons shopping_tag-content"></i>
                             <p>Tags</p>
                         </a>
@@ -119,12 +120,91 @@
                 </div>
             </nav>
             <!-- End Navbar -->
-            <div class="panel-header panel-header-lg">
-                <canvas id="bigDashboardChart"></canvas>
-            </div>
+
             <div class="content">
-
-
+                <section class="xop-section">
+                    <div class="xop-wrapper">
+                        <div class="xop-container">
+                            <a class="project" href="#">
+                                <figure>
+                                    <img src="images/01.jpg" alt="Spain building">
+                                    <figcaption>
+                                        <div>
+                                            <h3>The City</h3>
+                                            <p class="cta">View project</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a class="project" href="#">
+                                <figure>
+                                    <img src="images/02.jpg" alt="a Kiwi, lime, pear" title="Juicy Fruit">
+                                    <figcaption>
+                                        <div>
+                                            <h3>Juicy Fruit</h3>
+                                            <p class="cta">View project</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a class="project" href="#">
+                                <figure>
+                                    <img src="images/04.jpg" alt="Yellow roller coaster track" title="Roller Track">
+                                    <figcaption>
+                                        <div>
+                                            <h3>Roller Track</h3>
+                                            <p class="cta">View project</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a class="project" href="#">
+                                <figure>
+                                    <img src="images/05.jpg" alt="Yellow play balls" title="Yellow">
+                                    <figcaption>
+                                        <div>
+                                            <h3>Yellow</h3>
+                                            <p class="cta">View project</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a class="project" href="#">
+                                <figure>
+                                    <img src="images/03.jpg" alt="Swimming pool" title="Swimming Pool">
+                                    <figcaption>
+                                        <div>
+                                            <h3>Swimming Pool</h3>
+                                            <p class="cta">View project</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a class="project" href="#">
+                                <figure>
+                                    <img src="images/06.jpg" alt="Side of building" title="The Fourth Wall">
+                                    <figcaption>
+                                        <div>
+                                            <h3>The Fourth Wall</h3>
+                                            <p class="cta">View project</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a class="project" href="#">
+                                <figure>
+                                    <img src="images/07.jpg" alt="Skyline" title="Skyline">
+                                    <figcaption>
+                                        <div>
+                                            <h3>Skyline</h3>
+                                            <p class="cta">View project</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </div>
             <footer class="footer">
                 <div class="container-fluid">
@@ -142,15 +222,8 @@
     </div>
 </body>
 <!--   Core JS Files   -->
-<script src="../assets/js/core/jquery.min.js"></script>
-<script src="../assets/js/core/popper.min.js"></script>
-<script src="../assets/js/core/bootstrap.min.js"></script>
-<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        // Javascript method's body can be found in assets/js/demos.js
-        demo.initDashboardPageCharts();
-    });
-</script>
+
+<script src="../assets/js/jquery-3.5.1.js"></script>
+<script src="../assets/js/photos.js"></script>
 
 </html>
