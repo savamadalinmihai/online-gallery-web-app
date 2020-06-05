@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Online Gallery</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- CSS Files -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
 
 </head>
 
@@ -24,41 +24,38 @@
     Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
 -->
         <div class="logo">
-            <a class="simple-text logo-mini">
-
-            </a>
-            <a href="examples/dashboard.html" class="simple-text logo-normal">
+            <a href="photos.html" class="simple-text logo-normal">
                 Online Gallery
             </a>
         </div>
         <div class="sidebar-wrapper">
             <ul class="nav">
                 <li class="active">
-                    <a href="../examples/photos.html">
+                    <a href="photos.html">
                         <i class="now-ui-icons media-1_camera-compact"></i>
                         <p>Photos</p>
                     </a>
                 </li>
                 <li>
-                    <a href="../examples/icons.html">
+                    <a href="folders.html">
                         <i class="now-ui-icons files_single-copy-04"></i>
                         <p>Folders</p>
                     </a>
                 </li>
                 <li>
-                    <a href="../examples/map.html">
+                    <a href="albums.html">
                         <i class="now-ui-icons media-1_album"></i>
                         <p>Albums</p>
                     </a>
                 </li>
                 <li>
-                    <a href="../notifications.html">
+                    <a href="trash.html">
                         <i class="now-ui-icons shopping_basket"></i>
                         <p>Trash</p>
                     </a>
                 </li>
                 <li>
-                    <a href="../notifications.html">
+                    <a href="tags.html">
                         <i class="now-ui-icons shopping_tag-content"></i>
                         <p>Tags</p>
                     </a>
@@ -120,12 +117,91 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <div class="panel-header panel-header-lg">
-            <canvas id="bigDashboardChart"></canvas>
-        </div>
+
         <div class="content">
-
-
+            <section class="xop-section">
+                <div class="xop-wrapper">
+                    <div class="xop-container">
+                        <a class="project" href="#">
+                            <figure>
+                                <img src="examples/images/01.jpg" alt="Spain building">
+                                <figcaption>
+                                    <div>
+                                        <h3>The City</h3>
+                                        <p class="cta">View project</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a class="project" href="#">
+                            <figure>
+                                <img src="examples/images/02.jpg" alt="a Kiwi, lime, pear" title="Juicy Fruit">
+                                <figcaption>
+                                    <div>
+                                        <h3>Juicy Fruit</h3>
+                                        <p class="cta">View project</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a class="project" href="#">
+                            <figure>
+                                <img src="examples/images/04.jpg" alt="Yellow roller coaster track" title="Roller Track">
+                                <figcaption>
+                                    <div>
+                                        <h3>Roller Track</h3>
+                                        <p class="cta">View project</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a class="project" href="#">
+                            <figure>
+                                <img src="examples/images/05.jpg" alt="Yellow play balls" title="Yellow">
+                                <figcaption>
+                                    <div>
+                                        <h3>Yellow</h3>
+                                        <p class="cta">View project</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a class="project" href="#">
+                            <figure>
+                                <img src="examples/images/03.jpg" alt="Swimming pool" title="Swimming Pool">
+                                <figcaption>
+                                    <div>
+                                        <h3>Swimming Pool</h3>
+                                        <p class="cta">View project</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a class="project" href="#">
+                            <figure>
+                                <img src="examples/images/06.jpg" alt="Side of building" title="The Fourth Wall">
+                                <figcaption>
+                                    <div>
+                                        <h3>The Fourth Wall</h3>
+                                        <p class="cta">View project</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a class="project" href="#">
+                            <figure>
+                                <img src="examples/images/07.jpg" alt="Skyline" title="Skyline">
+                                <figcaption>
+                                    <div>
+                                        <h3>Skyline</h3>
+                                        <p class="cta">View project</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
         <footer class="footer">
             <div class="container-fluid">
@@ -143,15 +219,8 @@
 </div>
 </body>
 <!--   Core JS Files   -->
-<script src="../assets/js/core/jquery.min.js"></script>
-<script src="../assets/js/core/popper.min.js"></script>
-<script src="../assets/js/core/bootstrap.min.js"></script>
-<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        // Javascript method's body can be found in assets/js/demos.js
-        demo.initDashboardPageCharts();
-    });
-</script>
+
+<script src="assets/js/jquery-3.5.1.js"></script>
+<script src="assets/js/photos.js"></script>
 
 </html>

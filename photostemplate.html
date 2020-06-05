@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
@@ -11,48 +12,53 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+
 </head>
-<body>
+
+<body class="">
 <div class="wrapper ">
     <div class="sidebar" data-color="orange">
         <!--
     Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
 -->
         <div class="logo">
-            <a href="photos.html" class="simple-text logo-normal">
+            <a class="simple-text logo-mini">
+
+            </a>
+            <a href="examples/dashboard.html" class="simple-text logo-normal">
                 Online Gallery
             </a>
         </div>
         <div class="sidebar-wrapper">
             <ul class="nav">
-                <li>
-                    <a href="photos.html">
+                <li class="active">
+                    <a href="../examples/photos.html">
                         <i class="now-ui-icons media-1_camera-compact"></i>
                         <p>Photos</p>
                     </a>
                 </li>
                 <li>
-                    <a href="folders.html">
+                    <a href="../examples/icons.html">
                         <i class="now-ui-icons files_single-copy-04"></i>
                         <p>Folders</p>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="albums.html">
+                <li>
+                    <a href="../examples/map.html">
                         <i class="now-ui-icons media-1_album"></i>
                         <p>Albums</p>
                     </a>
                 </li>
                 <li>
-                    <a href="trash.html">
+                    <a href="../notifications.html">
                         <i class="now-ui-icons shopping_basket"></i>
                         <p>Trash</p>
                     </a>
                 </li>
                 <li>
-                    <a href="tags.html">
+                    <a href="../notifications.html">
                         <i class="now-ui-icons shopping_tag-content"></i>
                         <p>Tags</p>
                     </a>
@@ -113,7 +119,39 @@
                 </div>
             </div>
         </nav>
+        <!-- End Navbar -->
+        <div class="panel-header panel-header-lg">
+            <canvas id="bigDashboardChart"></canvas>
+        </div>
+        <div class="content">
+
+
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="copyright">
+                    &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>, Designed by
+                    <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+                    <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                </div>
+            </div>
+        </footer>
     </div>
 </div>
 </body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+    });
+</script>
+
 </html>
