@@ -476,7 +476,7 @@ Copyright (c) 2015 Daniel Eden
     height: 2.375rem;
     min-width: 2.375rem;
     width: 2.375rem;
-    padding: 0;
+    padding: 2rem;
     font-size: 0.9375rem;
     overflow: hidden;
     position: relative;
@@ -918,7 +918,7 @@ fieldset[disabled]
   background-color: transparent;
   border: 1px solid #E3E3E3;
   border-radius: 30px;
-  color: #2c2c2c;
+  color: #252c00;
   line-height: normal;
   font-size: 0.8571em;
   -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -1073,7 +1073,7 @@ fieldset[disabled]
 .form-group.no-border .form-control + .input-group-addon,
 .input-group.no-border .form-control,
 .input-group.no-border .form-control + .input-group-addon {
-  background-color: rgba(222, 222, 222, 0.3);
+  background-color: rgb(214, 214, 214);
   border: medium none; }
   .form-group.no-border .form-control:focus, .form-group.no-border .form-control:active, .form-group.no-border .form-control:active,
   .form-group.no-border .form-control + .input-group-addon:focus,
@@ -1378,7 +1378,7 @@ a.text-gray:focus, a.text-gray:hover {
       color: rgba(255, 255, 255, 0.8); }
 
 body {
-  color: #2c2c2c;
+  color: #000000;
   font-size: 14px;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -1564,12 +1564,12 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   padding-bottom: 0.625rem;
   min-height: 53px;
   margin-bottom: 20px;
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15); }
   .navbar a {
     vertical-align: middle; }
-    .navbar a:not(.btn):not(.dropdown-item) {
-      color: #FFFFFF; }
+    .navbar a:\not(.btn):not(.dropdown-item) {
+      color: #000000; }
     .navbar a.dropdown-item {
       color: #888; }
   .navbar.bg-white .input-group .form-control,
@@ -1585,7 +1585,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     .navbar.bg-white .input-group.no-border .form-control::-webkit-input-placeholder {
       color: #888; }
   .navbar.bg-white .input-group-addon i {
-    color: #888;
+    color: #000000;
     opacity: .5; }
   .navbar .form-group,
   .navbar .input-group {
@@ -1596,19 +1596,19 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     .navbar .form-group .input-group-addon,
     .navbar .input-group .form-group-addon,
     .navbar .input-group .input-group-addon {
-      color: #FFFFFF; }
+      color: #000000; }
     .navbar .form-group.no-border .form-control,
     .navbar .input-group.no-border .form-control {
-      color: #FFFFFF; }
+      color: #000000; }
       .navbar .form-group.no-border .form-control::-moz-placeholder,
       .navbar .input-group.no-border .form-control::-moz-placeholder {
-        color: #FFFFFF; }
+        color: #404040; }
       .navbar .form-group.no-border .form-control:-ms-input-placeholder,
       .navbar .input-group.no-border .form-control:-ms-input-placeholder {
-        color: #FFFFFF; }
+        color: #3a3a3a; }
       .navbar .form-group.no-border .form-control::-webkit-input-placeholder,
       .navbar .input-group.no-border .form-control::-webkit-input-placeholder {
-        color: #FFFFFF; }
+        color: #000000; }
   .navbar p {
     display: inline-block;
     margin: 0;
@@ -1624,14 +1624,14 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     left: 0;
     width: initial; }
   .navbar .navbar-wrapper {
-    display: -webkit-inline-box;
+    display: compact;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
     .navbar .navbar-wrapper .navbar-minimize {
-      padding-right: 10px; }
+      padding-right: 100px; }
       .navbar .navbar-wrapper .navbar-minimize .btn {
         margin: 0; }
     .navbar .navbar-wrapper .navbar-toggle .navbar-toggler {
@@ -1680,15 +1680,15 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   .navbar .navbar-nav .nav-item .nav-link:not(.btn):focus,
   .navbar .navbar-nav .nav-item .nav-link:not(.btn):hover,
   .navbar .navbar-nav .nav-item .nav-link:not(.btn):active {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #f96332;
     border-radius: 0.1875rem;
-    color: #FFFFFF; }
+    color: #4c4c4c; }
   .navbar .logo-container {
     width: 27px;
     height: 27px;
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 1px solid transparent; }
   .navbar .navbar-brand {
     text-transform: uppercase;
@@ -1710,7 +1710,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   .navbar .button-dropdown .navbar-toggler-bar:nth-child(2) {
     width: 17px; }
   .navbar.navbar-transparent {
-    background-color: transparent !important;
+    background-color: #ffffff !important;
     -webkit-box-shadow: none;
             box-shadow: none;
     color: #FFFFFF; }
@@ -1731,7 +1731,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     border: 1px solid #888; }
 
 .bg-default {
-  background-color: #888 !important; }
+  background-color: #ffffff !important; }
 
 .bg-primary {
   background-color: #f96332 !important; }
@@ -1785,7 +1785,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     z-index: 1; }
   .page-header .category,
   .page-header .description {
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgb(255, 255, 255); }
   .page-header.page-header-small {
     min-height: 60vh;
     max-height: 440px; }
@@ -1893,7 +1893,7 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
     .dropdown-menu .dropdown-item.disabled, .dropdown-menu .dropdown-item:disabled,
     .bootstrap-select .dropdown-menu.inner li a.disabled,
     .bootstrap-select .dropdown-menu.inner li a:disabled {
-      color: rgba(182, 182, 182, 0.6); }
+      color: #ffffff; }
       .dropdown-menu .dropdown-item.disabled:hover, .dropdown-menu .dropdown-item.disabled:focus, .dropdown-menu .dropdown-item:disabled:hover, .dropdown-menu .dropdown-item:disabled:focus,
       .bootstrap-select .dropdown-menu.inner li a.disabled:hover,
       .bootstrap-select .dropdown-menu.inner li a.disabled:focus,
@@ -2743,16 +2743,16 @@ Created using IcoMoon - icomoon.io
   .sidebar .logo,
   .off-canvas-sidebar .logo {
     position: relative;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 3.7rem;
     z-index: 4; }
     .sidebar .logo a.logo-mini,
     .off-canvas-sidebar .logo a.logo-mini {
       opacity: 1;
       float: left;
       width: 34px;
-      text-align: center;
+      text-align: right;
       margin-left: 10px;
-      margin-right: 12px; }
+      margin-right: 10px; }
     .sidebar .logo a.logo-normal,
     .off-canvas-sidebar .logo a.logo-normal {
       display: block;
@@ -2762,15 +2762,15 @@ Created using IcoMoon - icomoon.io
     .sidebar .logo:after,
     .off-canvas-sidebar .logo:after {
       content: '';
-      position: absolute;
+      position: right;
       bottom: 0;
-      right: 15px;
+      right: 0;
       height: 1px;
       width: calc(100% - 30px);
       background-color: rgba(255, 255, 255, 0.5); }
     .sidebar .logo p,
     .off-canvas-sidebar .logo p {
-      float: left;
+      float: unset;
       font-size: 20px;
       margin: 10px 10px;
       color: #FFFFFF;
@@ -2787,7 +2787,7 @@ Created using IcoMoon - icomoon.io
       text-decoration: none;
       font-weight: 400;
       line-height: 30px;
-      overflow: hidden; }
+      overflow: initial; }
   .sidebar .logo-tim,
   .off-canvas-sidebar .logo-tim {
     border-radius: 50%;
@@ -2795,7 +2795,7 @@ Created using IcoMoon - icomoon.io
     display: block;
     height: 61px;
     width: 61px;
-    float: left;
+    float: right;
     overflow: hidden; }
     .sidebar .logo-tim img,
     .off-canvas-sidebar .logo-tim img {
@@ -2881,8 +2881,7 @@ Created using IcoMoon - icomoon.io
   position: relative;
   float: right;
   width: calc(100% - 260px);
-  background-color: #E3E3E3;
-  background-color: #ebecf1;
+  background-color: #ffffff;
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
   .main-panel > .content {
@@ -3584,9 +3583,9 @@ Created using IcoMoon - icomoon.io
 
 @media screen and (min-width: 992px) {
   .navbar-collapse {
-    background: none !important; }
+    background: #ffffff !important; }
   .navbar .navbar-toggle {
-    display: none; }
+    display: none;}
   .navbar-nav .nav-link.profile-photo {
     padding: 0;
     margin: 7px 0.7rem; }
