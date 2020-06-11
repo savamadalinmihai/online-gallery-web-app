@@ -440,7 +440,7 @@ function (_Emitter) {
         /**
          * The text used before any files are dropped.
          */
-        dictDefaultMessage: "Drop files here to upload",
+        dictDefaultMessage: "Drag and drop your files here or chick on the message to open file selector",
 
         /**
          * The text that replaces the default message text it the browser is not supported.
