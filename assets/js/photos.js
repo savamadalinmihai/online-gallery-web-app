@@ -38,4 +38,28 @@ window.Photos = {
 };
 
 Photos.getPhotos();
-Photos.bindEvents();
+// Photos.bindEvents();
+
+
+
+// upload zone
+
+class FileUploadHandler {
+    constructor() {
+        this.dropzone = new Dropzone("#my-awesome-dropzone");
+        this.dropzone.on("addedfile", this.onfileUpload);
+    }
+
+    onfileUpload(file) {
+        debugger;
+        $.ajax({
+            url: "http://localhost:63342/photo/upload",
+            type: "POST",
+            data: file,
+            processData: false
+        });
+        debugger;
+    }
+}
+
+window.FileUploader = new FileUploadHandler();
