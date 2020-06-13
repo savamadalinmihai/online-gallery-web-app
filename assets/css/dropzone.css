@@ -174,14 +174,14 @@
   box-sizing: border-box; }
 
 .dropzone {
-  min-height: 200px;
+  min-height: 300px;
   border: 3px dashed rgba(22, 60, 175, 0.75);
   background: #e8e8e8;
   padding: 20px 20px; }
   .dropzone.dz-clickable {
     cursor: pointer; }
     .dropzone.dz-clickable * {
-      cursor: default; }
+      cursor: crosshair; }
     .dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message * {
       cursor: pointer; }
   .dropzone.dz-started .dz-message {

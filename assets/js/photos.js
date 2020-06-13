@@ -15,7 +15,7 @@ window.Photos = {
 
         photos.forEach(photo => photosHtml += Photos.getHtmlForOnePhoto(photo));
 
-        $('.xop-container').html(photosHtml);
+        $('.content').html(photosHtml);
 
     },
 
@@ -23,17 +23,15 @@ window.Photos = {
         return `
         <a class="project" href="">
             <figure>
-                <img src="${photo.url}" alt="">
+                <img src="${photo.path}" alt="">
                     <figcaption>
-                        <div>
-                            <h3>${photo.name}</h3>
-                            <p class="cta">View project</p>
-                        </div>
+                        <h1>EXPAND</h1>
                     </figcaption>
             </figure>
         </a>
         `;
     },
+
 
 };
 
@@ -41,25 +39,23 @@ Photos.getPhotos();
 // Photos.bindEvents();
 
 
-
 // upload zone
 
-class FileUploadHandler {
-    constructor() {
-        this.dropzone = new Dropzone("#my-awesome-dropzone");
-        this.dropzone.on("addedfile", this.onfileUpload);
-    }
-
-    onfileUpload(file) {
-        debugger;
-        $.ajax({
-            url: "http://localhost:63342/photo/upload",
-            type: "POST",
-            data: file,
-            processData: false
-        });
-        debugger;
-    }
-}
-
-window.FileUploader = new FileUploadHandler();
+// class FileUploadHandler {
+//     constructor() {
+//         this.dropzone = new Dropzone("#my-awesome-dropzone");
+//         this.dropzone.on("addedfile", this.onfileUpload);
+//     }
+//
+//     onfileUpload(file) {
+//         debugger;
+//         $.ajax({
+//             url: "http://localhost:63342/photo/upload",
+//             type: "POST",
+//             data: file,
+//             processData: false
+//         });
+//         debugger;
+//     }
+// }
+// window.FileUploader = new FileUploadHandler();
