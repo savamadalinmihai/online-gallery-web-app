@@ -24,9 +24,6 @@ window.Photos = {
         <a class="project" href="">
             <figure>
                 <img src="${photo.path}" alt="">
-                    <figcaption>
-                        <h1>EXPAND</h1>
-                    </figcaption>
             </figure>
         </a>
         `;

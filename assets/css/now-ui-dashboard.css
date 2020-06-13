@@ -175,12 +175,9 @@ Copyright (c) 2015 Daniel Eden
     margin: 0 auto;
   }
   .xop-container {
-    display: inline-table;
-    grid-template-columns: auto;
-    grid-gap: 1em;
-  }
-  .project:nth-child(1) {
-    grid-column: 1 / span 5;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
   }
 
   .xop-section {
@@ -194,51 +191,31 @@ Copyright (c) 2015 Daniel Eden
     display: inline-table;
     width: 100%;
     text-decoration: none;
-    margin: 1em 1em;
+    margin: 10px 10px;
     cursor: pointer;
   }
   figure {
     margin: 0;
-    padding: 0;
-  }
-  .project figure img {
-    width: 100%;
-    display: inline-table;
-    object-fit: scale-down;
-    height: 222px;
-  }
-  .project figcaption {
-    padding: 0;
-    background: #966116;
-    color: #fff;
+    padding: 5px;
   }
 
   .project {
-    width: 30%;
+    width: 220px;
     height: 100px;
     text-decoration: none;
     margin: 0;
   }
   .project figure {
-    position: relative;
+    position: center;
     overflow: hidden;
   }
   .project figure img {
     position: relative;
     z-index: 999;
-    transition: transform 0.4s;
+    transition: transform 0.3s;
   }
   .project figure:hover img {
-    transform: translateY(-90px);
-  }
-
-  .project figcaption {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 20px;
-    height: 90px;
-    width: 100%;
+    transform: scale(1.5);
   }
 }
 
