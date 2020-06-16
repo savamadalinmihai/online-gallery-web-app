@@ -187,6 +187,7 @@ Copyright (c) 2015 Daniel Eden
     line-height: 1.3;
     margin: 0 0 4em;
   }
+
   .project {
     display: inline-table;
     width: 100%;
@@ -198,7 +199,6 @@ Copyright (c) 2015 Daniel Eden
     margin: 0;
     padding: 5px;
   }
-
   .project {
     width: 220px;
     height: 100px;
