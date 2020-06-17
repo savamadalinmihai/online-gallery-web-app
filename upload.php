@@ -1,26 +1,16 @@
 <?php
-/* Getting file name */
-$filename = $_FILES['file']['name'];
+$upload_dir = 'uploads';
+if (!empty($_FILES))
+{
+    $tempFile = $_FILES['file']['tmp_name'];//this is temporary server location
 
-/* Location */
-$location = "upload/".$filename;
-$uploadOk = 1;
-$imageFileType = pathinfo($location,PATHINFO_EXTENSION);
+    // using DIRECTORY_SEPARATOR constant is a good practice, it makes your code portable.
+    $uploadPath = dirname( __FILE__ ) . DIRECTORY_SEPARATOR . $upload_dir . DIRECTORY_SEPARATOR;
 
-/* Valid Extensions */
-$valid_extensions = array("jpg","jpeg","png");
-/* Check file extension */
-if( !in_array(strtolower($imageFileType),$valid_extensions) ) {
-    $uploadOk = 0;
+    // Adding timestamp with image's name so that files with same name can be uploaded easily.
+    $mainFile = $uploadPath.time().'-'. $_FILES['file']['name'];
+
+    move_uploaded_file($tempFile,$mainFile);
 }
 
-if($uploadOk == 0){
-    echo 0;
-}else{
-    /* Upload file */
-    if(move_uploaded_file($_FILES['file']['tmp_name'],$location)){
-        echo $location;
-    }else{
-        echo 0;
-    }
-}
+?>
