@@ -23,7 +23,7 @@ window.Photos = {
         return `
         <a class="project" href="">
             <figure>
-                <img src="${photo.path}" alt="">
+                <img src="${photo.imageData}" alt="">
             </figure>
         </a>
         `;
