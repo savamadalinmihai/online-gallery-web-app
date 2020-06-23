@@ -15,7 +15,6 @@ Dropzone.options.myDropzone = {
                 let hour = String(now.getHours());
                 let minutes = String(now.getMinutes() + 1).padStart(2, '0');
                 let seconds = String(now.getSeconds());
-                let miliseconds = String(now.getMilliseconds());
                 let atomictime = String(now.getTime());
                 let day = String(now.getDate()).padStart(2, '0');
                 let month = String(now.getMonth() + 1).padStart(2, '0');
@@ -53,11 +52,13 @@ Dropzone.options.myDropzone = {
         reader.readAsDataURL(file);
         done();
     },
-}
+};
 
 window.Upload = {
     API_URL: "http://localhost:8086",
 
-}
+};
+
+
 
 
