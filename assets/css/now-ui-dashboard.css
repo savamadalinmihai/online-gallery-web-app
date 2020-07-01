@@ -167,7 +167,7 @@ Copyright (c) 2015 Daniel Eden
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .ps-container {
-    overflow: auto !important; } }
+    overflow: hidden !important; } }
 
 @media screen and (min-width: 960px) {
   .xop-wrapper {
@@ -176,7 +176,7 @@ Copyright (c) 2015 Daniel Eden
   }
   .xop-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-gap: 10px;
   }
 
@@ -190,7 +190,8 @@ Copyright (c) 2015 Daniel Eden
 
   .project {
     display: inline-table;
-    width: 100%;
+    max-width: 220px;
+    max-height: 220px;
     text-decoration: none;
     margin: 10px 10px;
     cursor: pointer;
@@ -200,8 +201,8 @@ Copyright (c) 2015 Daniel Eden
     padding: 5px;
   }
   .project {
-    width: 220px;
-    height: 100px;
+
+    overflow: hidden;
     text-decoration: none;
     margin: 0;
   }
@@ -210,6 +211,7 @@ Copyright (c) 2015 Daniel Eden
     overflow: hidden;
   }
   .project figure img {
+
     position: relative;
     z-index: 999;
     transition: transform 0.3s;

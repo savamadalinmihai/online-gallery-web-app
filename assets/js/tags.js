@@ -21,13 +21,7 @@ window.Tags = {
     },
 
     getHtmlForOneTag: function (tag) {
-        return `
-        <div class="project" href="">
-            <figure>
-                <img src="assets/img/folder.png" alt="">
-                <h1>${tag.name}</h1>
-            </figure>
-        </div>
+        return `<div class="tags">${tag.tagName}</div>
         `;
     },
 }
